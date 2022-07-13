@@ -9,8 +9,8 @@ The following are behaviours added by this library:
 <li>A "hook" behaviour that allows for any item implementing the provided `DispensableItem` interface to have custom dispenser behaviour implemented</li>
 </ul>
 
-###IMPORTANT NOTE: Adding additional behaviours to items that already have programmed behaviours will override them. This is simply how vanilla dispensers work and changing this is outside the scope of this mod.
-
 ## License
 
 This library is available under the CC0 License, a copy of which resides within the repository
+
+##**IMPORTANT NOTE: Adding additional behaviours to items that already have programmed behaviours will override them. This is simply how vanilla dispensers work and changing this is outside the scope of this mod.**
