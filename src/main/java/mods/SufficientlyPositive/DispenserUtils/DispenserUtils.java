@@ -8,6 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 // TODO: see how much lag is caused by 1000 dispensers or doing this or something
+// TODO: comment everything important
 
 // Mod provides several new DispenserBehaviours that grant generalised access to items' useOnBlock
 // by the mod to simulate player interaction but with dispensers instead
