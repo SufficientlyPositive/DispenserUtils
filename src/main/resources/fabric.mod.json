@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "dispenser-utils",
+  "version": "${version}",
+
+  "name": "Dispenser Utils",
+  "description": "A Library for easier addition and registration of dispenser functionality",
+  "authors": [
+    "SufficientlyPositive"
+  ],
+  "contact": {
+    "sources": "https://github.com/"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/DispenserUtils/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mods.SufficientlyPositive.DispenserUtils.DispenserUtils"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
