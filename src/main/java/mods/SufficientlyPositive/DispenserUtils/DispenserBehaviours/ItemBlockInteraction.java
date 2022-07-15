@@ -20,6 +20,12 @@ import net.minecraft.world.World;
 import java.util.ArrayList;
 import java.util.Collection;
 
+/**
+ * Behaviour allowing dispensers to use items using their useOnBlock() function.
+ * The behaviour also provides options for whether the dispenser should use durability
+ * on the item when using it, as well as further narrowing down the blocks the item can
+ * be used on.
+ */
 public class ItemBlockInteraction extends FallibleItemDispenserBehavior {
 
     private ArrayList<Block> whitelistedBlocks = null;

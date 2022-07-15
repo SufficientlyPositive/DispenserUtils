@@ -13,4 +13,4 @@ The following are behaviours added by this library:
 
 This library is available under the CC0 License, a copy of which resides within the repository
 
-##**IMPORTANT NOTE: Adding additional behaviours to items that already have programmed behaviours will override them. This is simply how vanilla dispensers work and changing this is outside the scope of this mod.**
+**IMPORTANT NOTE: Adding additional behaviours to items that already have programmed behaviours will override them. This is simply how vanilla dispensers work and changing this is outside the scope of this mod.**

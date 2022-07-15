@@ -11,6 +11,12 @@ import net.minecraft.util.math.BlockPointer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 
+/**
+ * Behaviour allowing dispensers to place blocks in the world, directly in front
+ * of themselves. This uses AutomaticItemPlacementContext, similar to
+ * BlockAboveBlockPlacement, but does not check for any additional placement
+ * conditions.
+ */
 public class BlockPlacement extends FallibleItemDispenserBehavior {
 
     public BlockPlacement() {}

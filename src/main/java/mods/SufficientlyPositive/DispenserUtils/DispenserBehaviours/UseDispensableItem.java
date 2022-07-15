@@ -9,9 +9,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPointer;
 import net.minecraft.util.math.Direction;
 
-public class UseDispenseableItem extends FallibleItemDispenserBehavior {
+/**
+ * Behaviour provides functionality for using the dispense() function available through the
+ * DispensableItems interface.
+ */
+public class UseDispensableItem extends FallibleItemDispenserBehavior {
 
-    public UseDispenseableItem() {}
+    public UseDispensableItem() {}
 
     protected ItemStack dispenseSilently(BlockPointer pointer, ItemStack stack) {
         this.setSuccess(false);

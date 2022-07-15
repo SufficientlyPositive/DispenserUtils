@@ -18,11 +18,16 @@ import net.minecraft.world.World;
 import java.util.ArrayList;
 import java.util.Collection;
 
+/**
+ * Behaviour allowing dispensers to place specific blocks above non-air blocks.
+ * Behaviour works by using Minecraft's AutomaticItemPlacementContext to attempt
+ * to place a block facing downwards if the block underneath matches any tags or
+ * other specified blocks.
+ *
+ * If the default constructor is used, as long as there is something underneath the
+ * block, the dispenser can place it.
+ */
 public class BlockAboveBlockPlacement extends FallibleItemDispenserBehavior {
-
-    // all blocks should be the same on registries right?
-    // TODO: NEXT ITERATION REMOVE HASHSET/ONLY USE IT IN CERTAIN CASES, USES LOTS OF MEMORY!
-    // maybe have functionality that is for 0/1 specified block, then functionality for multiple blocks in an extended class?
 
     private ArrayList<Block> whitelistedBlocks = null;
     private ArrayList<TagKey<Block>> tags = null;
