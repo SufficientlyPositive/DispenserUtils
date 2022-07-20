@@ -7,18 +7,6 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-// TODO: comment everything important
-// TODO: see how much lag is caused by 1000 dispensers or doing this or something
-
-// Mod provides several new DispenserBehaviours that grant generalised access to items' useOnBlock
-// by the mod to simulate player interaction but with dispensers instead
-// Provides support for automatic placement of blocks and crops
-// Also provides support for hooking your own item's custom behaviour when used by a dispensed
-// Allows generalised support for tags on blocks that the dispenser is interacting with (not the item it's using though!)
-
-// what if using tags and blocks are sent to registries after? Maybe a dispenser mixin that includes a tag map that initialises once?
-// what about a function that adds all of an item type to this? Like all axes?
-// instead might be best to have some form of config that allows that behaviour on the dispenser side of things? maybe some form of mixin?
 public class DispenserUtils implements ModInitializer {
 
     public static final Logger LOGGER = LogManager.getLogger("DispenserUtils");

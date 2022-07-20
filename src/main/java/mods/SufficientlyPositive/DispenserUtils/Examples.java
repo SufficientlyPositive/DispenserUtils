@@ -1,15 +1,21 @@
 package mods.SufficientlyPositive.DispenserUtils;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Items;
 import net.minecraft.tag.BlockTags;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 import java.util.List;
 
 import static mods.SufficientlyPositive.DispenserUtils.BehaviourFunctions.*;
 
 public class Examples {
+
+    public static final ExampleItem DISPENSABLE_NEXT_TO_LEAVES = new ExampleItem(new FabricItemSettings().group(ItemGroup.MISC));
 
     public static void init() {
 
@@ -34,5 +40,8 @@ public class Examples {
 
         // Stone axes can now be used on all log types (including WOOD blocks)
         useItemOnBlocksWithTags(Items.STONE_AXE, BlockTags.LOGS);
+
+        Registry.register(Registry.ITEM, new Identifier(DispenserUtils.MOD_ID, "leaf_enjoyer"), DISPENSABLE_NEXT_TO_LEAVES);
+        useDispense(DISPENSABLE_NEXT_TO_LEAVES);
     }
 }

@@ -10,5 +10,16 @@ import net.minecraft.util.math.Direction;
  * function, the item needs to first implement the DispensableItem interface.
  */
 public interface DispensableItem {
-    boolean dispense(BlockPointer pointer, ItemStack armor, Direction dispenserDirection);
+
+    /**
+     * Function called whenever the specified item is used by a dispenser. The behaviour is
+     * specified by the modder.
+     *
+     * @param pointer the BlockPointer to the dispenser block
+     * @param item the specific ItemStack being used, make sure that any damaging/decrementing
+     *             is specified here as it is not automatic.
+     * @param dispenserDirection the direction the dispenser is facing in.
+     * @return whether dispensing the item was successful or not.
+     */
+    boolean dispense(BlockPointer pointer, ItemStack item, Direction dispenserDirection);
 }
